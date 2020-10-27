@@ -12,6 +12,7 @@
 }
 .navbar {
     width: 25%;
+    padding-left: 13%;
 
 
 }
@@ -23,5 +24,6 @@
 
 .trends {
     width: 32%;
+    padding-right: 13.5%;
 
 }
