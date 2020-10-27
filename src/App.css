@@ -1,0 +1,27 @@
+.app {
+    background-color: #15202B;
+}
+
+.wrapper {
+    display: flex;
+    height: 100vh;
+}
+
+.navbar, .feed, .trends {
+    border: 0.1em solid #253341;
+}
+.navbar {
+    width: 25%;
+
+
+}
+
+.feed {
+    width: 43%;
+
+}
+
+.trends {
+    width: 32%;
+
+}
