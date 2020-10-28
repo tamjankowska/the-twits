@@ -24,8 +24,8 @@ const App = () => {
         </div>
 
         <div className = "trends">
-          <p>CONTENT HERE</p>
-          {/* <Trends /> */}
+          
+          <Trends />
         </div>
 
       </div>

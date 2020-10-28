@@ -1,0 +1,61 @@
+.trends-panel {
+    position: relative;
+    left: 5%;
+    width: 75%;
+    top:2%;
+}
+
+.searchBar {
+    display: inline-flex;
+    position: relative;
+    width: 75%;
+    height:35px;
+    border-radius: 20px;
+    background-color:#253341;
+    color: grey;
+}
+
+.searchBar:placeholder-shown {
+    color: white;
+}
+
+
+.trends-aside {
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #253341;
+  
+}
+
+.trends-aside h2 {
+    border-bottom: 0.05em solid #666769c4;
+    color: white;
+    font-weight: normal;
+    padding-bottom: 3%;
+    padding-left: 2%;
+}
+.trend-article {
+    border-bottom: 0.05em solid #666769c4;
+    padding: 8px 12px;
+    
+}
+.trend-article h3 {
+    color: white;
+    font-weight: normal;
+    display: flex;
+}
+
+.trend-article p {
+    color: grey;
+    display: flex;
+}
+
+
+
+.trends-image {
+    display: flex;
+    float: right;
+    height: 40%;
+    width: 30%;
+    border-radius: 10px;
+}

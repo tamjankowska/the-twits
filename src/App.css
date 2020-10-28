@@ -1,5 +1,8 @@
 .app {
     background-color: #15202B;
+    /*May need this for rescaling*/
+    /* margin-left: auto;
+    margin-right: auto; */
 }
 
 .wrapper {
