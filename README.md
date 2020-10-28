@@ -69,6 +69,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-### `npm run install --save @fortawesome/fontawesome-free
+### `npm run install --save @fortawesome/fontawesome-free`
 
 Required to install Twitter icons
+
+### `npm run install react-icons --save`
+
+Required to install React icons 
