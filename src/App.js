@@ -20,8 +20,7 @@ const App = () => {
         </div>
 
         <div className = "feed">
-          <p>CONTENT HERE</p>
-          {/* <Feed /> */}
+          <Feed />
         </div>
 
         <div className = "trends">
