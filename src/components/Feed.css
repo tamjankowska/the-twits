@@ -38,6 +38,14 @@
     position:relative;
 }
 
+
+
+.inputAndButton{
+    padding-bottom: 7%;
+    padding-right: 2%;
+    border-bottom:0.5em solid #253341;
+}
+
 #userImage{
     max-width: 3vw;
     max-height: 3%;
@@ -49,7 +57,6 @@
     font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
     background: #15202B;
     float: center;
-    border-left: 0.1em solid #253341;
     border-right: 0.1em solid #253341;
     border-top: 0.1em solid #253341;
     border-bottom:none;
@@ -88,18 +95,31 @@ input, select, textarea{
 
 .tweetBar{
     float: right;
-    padding-left:89%;
-    border-bottom:0.5em solid #253341;
+    padding-left:88.5%;
+  
 }
 
 /*BELOW WILL BE FORMATTING FOR THE INDIVIDUAL POSTS ONCE THEY'RE STACKED-So the render*/
 
 
 .twitterFeed{
-    border-top: 0.1em solid #253341;
     border-bottom: 0.1em solid #253341;
     padding:0.6em;
-    padding-top: 6%;
+    padding-top: 2%;
+}
+
+
+.top-row-flex{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.profPic{
+    border-radius: 50%;
+    width: 3.7em;
+    height: 3.7em;
 }
 
 .user{
@@ -107,6 +127,7 @@ input, select, textarea{
     color: white;
     font-size: 1em;
     float:left;
+    padding-left: 0.6em;
 }
 
 .handle, .timePosted{
@@ -122,25 +143,20 @@ input, select, textarea{
     padding-left: 0.5em;
 }
 
-.top-row-flex{
-    display:flex;
-    flex-direction: row;
-    justify-content: flex-start;
-}
-
 .headline{
    font-size: 1em;
    font-weight: normal;
    width: 100%;
    color: white; 
+   padding-left: 4em;
 }
 
 .tweetImage{
-    max-width: 40vw;
-    max-height: 100%;
+    max-width: 30vw;
+    max-height: auto;
     border-radius: 1.5em;
-    overflow:hidden;
-    align-self: center;
+    overflow: auto;
+    padding-left: 4em;
 }
 /* ---> So these are for the icons underneath
 .icons-container{
