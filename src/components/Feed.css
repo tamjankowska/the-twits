@@ -1,0 +1,112 @@
+/*system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif; --> Font styles*/
+/*So make a div to surround the header with fixed-header className*/
+/*Need to make a wrapper for these
+.div-for-whole-block{
+    font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+    border-top: 0.1em solid #253341;
+    border-bottom: 0.1em solid #253341;
+}
+*/
+
+.header{
+    font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+    float:left;
+    display:block;
+    padding: 1%;
+    font-size: 0.6em;
+    background: #15202B;
+    color: white;
+} /*This might not work- might be easier to do a sticky header and incorporate that with JS*/
+
+
+.feed{
+   width:43vw;
+   height: 100vh;
+}
+
+/*Below are for the functional tweet box */
+
+#post{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+#userImage{
+    max-width: 3vw;
+    max-height: 3%;
+    border-radius: 50%;
+    overflow:hidden;
+} 
+
+
+#inputBar{
+    font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+    background: #15202B;
+    color: #84898F;
+    float: center;
+    border:none;
+}
+
+#tweet{
+    background-color: #36A1F2;
+    color:white;
+    font-size: 1em;
+    font-weight:bold;
+    text-align:center;
+    text-decoration: none;
+    padding: 0.55em;
+    width: 5vw;
+    height: 1%;
+    cursor: pointer;
+    border-radius: 1.5em;
+    border:none;
+}
+
+#tweet:hover{
+    opacity:50%;
+}
+
+
+/*BELOW WILL BE FORMATTING FOR THE INDIVIDUAL POSTS ONCE THEY'RE STACKED-So the render*/
+
+
+#twitterFeed{
+    display:flex;
+    flex-direction: row;
+    border-top: 0.1em solid #253341;
+    border-bottom: 0.1em solid #253341;
+}
+
+.user{
+    font-weight: bold;
+    color: white;
+    font-size: 1em;
+    float:left;
+}
+
+.handle, .timePosted{
+    font-size: 1em;
+    font-weight: normal;
+    color: #84898F;
+}
+
+.headline{
+   width: 100%;
+   color: white; 
+}
+
+.tweetImage{
+    max-width: 40vw;
+    max-height: 100%;
+    border-radius: 50%;
+    overflow:hidden;
+}
+/* ---> So these are for the icons underneath
+.icons-container{
+    max-width: 30%;
+    max-height: 1.3%;
+    margin: 0, 0, 0, 0.6em;
+}*/
