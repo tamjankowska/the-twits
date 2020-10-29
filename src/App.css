@@ -30,3 +30,18 @@
     padding-right: 13.5%;
 
 }
+
+/* Responsive for iPhone 6/7/8 */
+
+@media screen and (max-width: 375px) {
+    .trends, .navbar {
+      display: none;
+    }
+    .feed {
+        border: none;
+        display: flex;
+        justify-content: center;
+        margin-right: 20px;
+		margin-left: 20px;
+    }
+}

@@ -1,61 +1,93 @@
 .trends-panel {
-    position: relative;
-    left: 5%;
-    width: 75%;
-    top:2%;
+  position: relative;
+  left: 5%;
+  width: 75%;
+  top: 2%;
+  line-height: 90%;
 }
 
-.searchBar {
-    display: inline-flex;
-    position: relative;
-    width: 75%;
-    height:35px;
-    border-radius: 20px;
-    background-color:#253341;
-    color: grey;
+.trends-panel a {
+  color: #36a1f2;
+  text-decoration: none;
 }
 
-.searchBar:placeholder-shown {
-    color: white;
+.trends-panel a:hover {
+  text-decoration: underline;
 }
 
+.trends-searchBar {
+  position: relative;
+  top: 5%;
+  width: 99%;
+  height: 35px;
+  border-radius: 20px;
+  background-color: #253341;
+  color: grey;
+  margin-bottom: 2%;
+}
+
+::placeholder {
+  color: #808388e1; /*This may affect other placeholders */
+  font-size: larger;
+  position: relative;
+  left: 5%;
+}
 
 .trends-aside {
-    border-radius: 15px;
-    overflow: hidden;
-    background-color: #253341;
-  
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #253341;
+  padding-top: 2%;
 }
 
 .trends-aside h2 {
-    border-bottom: 0.05em solid #666769c4;
-    color: white;
-    font-weight: normal;
-    padding-bottom: 3%;
-    padding-left: 2%;
+  border-bottom: 0.05em solid #666769c4;
+  color: white;
+  font-weight: bold;
+  padding-bottom: 5%;
+  padding-top: 0;
+  padding-left: 2%;
 }
 .trend-article {
-    border-bottom: 0.05em solid #666769c4;
-    padding: 8px 12px;
-    
+  border-bottom: 0.05em solid #666769c4;
+  padding: 8px 12px;
 }
 .trend-article h3 {
-    color: white;
-    font-weight: normal;
-    display: flex;
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+  width: 60%;
+  line-height: normal;
+  overflow: hidden;
 }
 
 .trend-article p {
-    color: grey;
-    display: flex;
+  color: grey;
+  text-align: justify;
+  margin-block-start: 1%;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 1%;
 }
 
-
-
 .trends-image {
-    display: flex;
-    float: right;
-    height: 40%;
-    width: 30%;
-    border-radius: 10px;
+  display: flex;
+  float: right;
+  height: 35%;
+  width: 35%;
+  border-radius: 10px;
+}
+
+.show-more {
+  padding: 4%;
+  font-size: large;
+}
+.trends-footer {
+  padding-top: 2%;
+}
+
+.trends-footer a {
+  padding: 2%;
+  display: inline-block;
+  color: grey;
 }
