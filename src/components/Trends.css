@@ -3,20 +3,31 @@
     left: 5%;
     width: 75%;
     top:2%;
+    line-height: 90%;
 }
 
-.searchBar {
-    display: inline-flex;
+.trends-panel a {
+    color: #36A1F2;
+    text-decoration: none;
+}
+
+.trends-panel a:hover {
+    text-decoration: underline;
+}
+
+.trends-searchBar {
     position: relative;
-    width: 75%;
+    top: 5%;
+    width: 99%;
     height:35px;
     border-radius: 20px;
     background-color:#253341;
     color: grey;
+    margin-bottom: 2%;
 }
 
-.searchBar:placeholder-shown {
-    color: white;
+::placeholder {
+    color: #808388e1; /*This may affect other placeholders */
 }
 
 
@@ -24,14 +35,15 @@
     border-radius: 15px;
     overflow: hidden;
     background-color: #253341;
-  
+    padding-top: 2%;
 }
 
 .trends-aside h2 {
     border-bottom: 0.05em solid #666769c4;
     color: white;
-    font-weight: normal;
+    font-weight: bold;
     padding-bottom: 3%;
+    padding-top: 0;
     padding-left: 2%;
 }
 .trend-article {
@@ -41,21 +53,31 @@
 }
 .trend-article h3 {
     color: white;
-    font-weight: normal;
-    display: flex;
+    font-weight: bold;
+    /* display: flex; */
+    display: inline-block;
+    text-align: justify;
 }
 
 .trend-article p {
     color: grey;
-    display: flex;
+    text-align: justify;
 }
 
-
-
 .trends-image {
-    display: flex;
+    /* display: flex; */
+    /* display: block; */
     float: right;
     height: 40%;
     width: 30%;
     border-radius: 10px;
+    margin-right: 5%;
+    margin-top: 2%;
+        
 }
+
+.show-more {
+    padding: 4%;
+    font-size: large;
+}
+

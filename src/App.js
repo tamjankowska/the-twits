@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 
 import Navbar from './components/Navbar';
@@ -7,6 +7,11 @@ import Trends from './components/Trends';
 
 const App = () => {
 
+  const [name] = useState("Twitter");
+
+  useEffect(()=> {
+    document.title = name;
+  })
 
   return (
     <div className = "app">
