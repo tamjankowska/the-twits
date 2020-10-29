@@ -22,20 +22,21 @@
 
 
 .feed{
-   width:43vw;
+   width: 43vw;
    height: 100vh;
 }
 
 /*Below are for the functional tweet box */
 
 #post{
-    width: 100%;
-    display: flex;
+    width: 43vw;
+    display:flex;
+    flex-basis: auto;
     flex-direction: column;
-    border-bottom:0.5em solid #253341;
-    padding-bottom: 5em;
+    flex-shrink: 0;
+    padding-bottom: 0.5em;
+    position:relative;
 }
-
 
 #userImage{
     max-width: 3vw;
@@ -44,12 +45,11 @@
     overflow:hidden;
 } 
 
-
 #inputBar{
     font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
     background: #15202B;
     float: center;
-    border-left: none;
+    border-left: 0.1em solid #253341;
     border-right: 0.1em solid #253341;
     border-top: 0.1em solid #253341;
     border-bottom:none;
@@ -66,7 +66,7 @@ input, select, textarea{
     outline:none;
 }
 
-#tweet{
+#tweetBar{
     background-color: #36A1F2;
     color:white;
     font-size: 1em;
@@ -79,27 +79,27 @@ input, select, textarea{
     cursor: pointer;
     border-radius: 1.5em;
     border:none;
-    position: fixed;
-    right:31%;
-    top: 19%;
 }
 /*ONCE WE HAVE ICONS FOR NEXT TO TWITTER BUTTON- do the same for their positioning*/
 
-#tweet:hover{
+#tweetBar:hover{
     opacity:50%;
 }
 
+.tweetBar{
+    float: right;
+    padding-left:89%;
+    border-bottom:0.5em solid #253341;
+}
 
 /*BELOW WILL BE FORMATTING FOR THE INDIVIDUAL POSTS ONCE THEY'RE STACKED-So the render*/
 
 
-#twitterFeed{
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+.twitterFeed{
     border-top: 0.1em solid #253341;
     border-bottom: 0.1em solid #253341;
     padding:0.6em;
+    padding-top: 6%;
 }
 
 .user{
@@ -113,9 +113,24 @@ input, select, textarea{
     font-size: 1em;
     font-weight: normal;
     color: #84898F;
+    padding-left: 0.6em;
+}
+.timedot{
+    font-size: 1em;
+    font-weight: normal;
+    color: #84898F;
+    padding-left: 0.5em;
+}
+
+.top-row-flex{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
 }
 
 .headline{
+   font-size: 1em;
+   font-weight: normal;
    width: 100%;
    color: white; 
 }
@@ -123,8 +138,9 @@ input, select, textarea{
 .tweetImage{
     max-width: 40vw;
     max-height: 100%;
-    border-radius: 50%;
+    border-radius: 1.5em;
     overflow:hidden;
+    align-self: center;
 }
 /* ---> So these are for the icons underneath
 .icons-container{
