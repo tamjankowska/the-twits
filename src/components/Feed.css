@@ -11,8 +11,10 @@
 .header{
     font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
     float:left;
-    display:block;
-    padding: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: .3%;
+    padding-top: .3%;
     font-size: 0.6em;
     background: #15202B;
     color: white;
@@ -30,7 +32,8 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-
+    border-bottom:0.5em solid #253341;
+    padding-bottom: 5em;
 }
 
 
@@ -45,9 +48,22 @@
 #inputBar{
     font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
     background: #15202B;
-    color: #84898F;
     float: center;
-    border:none;
+    border-left: none;
+    border-right: 0.1em solid #253341;
+    border-top: 0.1em solid #253341;
+    border-bottom:none;
+    font-size: 1.2em;
+    font-weight: 490;
+    padding:0.6em;
+}
+
+input, select, textarea{
+    color: grey;
+}
+
+#inputBar:focus{
+    outline:none;
 }
 
 #tweet{
@@ -59,11 +75,15 @@
     text-decoration: none;
     padding: 0.55em;
     width: 5vw;
-    height: 1%;
+    height: 5%;
     cursor: pointer;
     border-radius: 1.5em;
     border:none;
+    position: fixed;
+    right:31%;
+    top: 19%;
 }
+/*ONCE WE HAVE ICONS FOR NEXT TO TWITTER BUTTON- do the same for their positioning*/
 
 #tweet:hover{
     opacity:50%;
@@ -76,8 +96,10 @@
 #twitterFeed{
     display:flex;
     flex-direction: row;
+    flex-wrap: wrap;
     border-top: 0.1em solid #253341;
     border-bottom: 0.1em solid #253341;
+    padding:0.6em;
 }
 
 .user{
