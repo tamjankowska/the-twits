@@ -18,12 +18,13 @@
     font-size: 0.6em;
     background: #15202B;
     color: white;
+    border:none;
 } /*This might not work- might be easier to do a sticky header and incorporate that with JS*/
 
 
 .feed{
    width: 43vw;
-   height: 100vh;
+   border:none;
 }
 
 /*Below are for the functional tweet box */
@@ -57,7 +58,7 @@
     font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
     background: #15202B;
     float: center;
-    border-right: 0.1em solid #253341;
+    border-right: none;
     border-top: 0.1em solid #253341;
     border-bottom:none;
     font-size: 1.2em;
@@ -93,9 +94,13 @@ input, select, textarea{
     opacity:50%;
 }
 
+#tweetBar:focus{
+    outline:none;
+}
+
 .tweetBar{
     float: right;
-    padding-left:88.5%;
+    padding-left:88%;
   
 }
 
@@ -152,11 +157,11 @@ input, select, textarea{
 }
 
 .tweetImage{
-    max-width: 30vw;
+    max-width: 35vw;
     max-height: auto;
     border-radius: 1.5em;
     overflow: auto;
-    padding-left: 4em;
+    margin-left: 4em;
 }
 /* ---> So these are for the icons underneath
 .icons-container{
