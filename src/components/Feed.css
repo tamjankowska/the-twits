@@ -88,6 +88,11 @@ input, select, textarea{
     outline:none;
 }
 
+#feedIconsBar{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
 
 #feedIcons{
     display:flex;
@@ -100,10 +105,9 @@ input, select, textarea{
 }
 
 .tweetBar{
-    float:right;
-    padding-top:0;
-    padding-left: 40%;
-
+    display:flex;
+    justify-content: flex-end;
+    width: 70%;
 }
 
 #tweetBar{
