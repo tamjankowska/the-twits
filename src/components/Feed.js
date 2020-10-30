@@ -3,14 +3,17 @@ import './Feed.css';
 import Zardoz from './../images/feed-zardoz.jpg';
 
 const Feed = () => {
-    const [tweets, setTweets] = useState([])
+    // let currentTime = Date.now(); still working on this 
+    const [tweets, setTweets] = useState([]);
     const [tweet, setTweet] = useState({
         user: "Zardoz", 
-        handle: "zarz",
+        handle: "@zarz",
+        // time: currentTime,
         profilePic: Zardoz,
         content: "",
     })
 
+    
     const recordTweet = (event) => {  
         setTweet({
             ...tweet,
@@ -25,8 +28,21 @@ const Feed = () => {
                 id: tweets.length
             } 
         ])
-        console.log(tweets, tweet)
+        setTweet({
+            user: "Zardoz", 
+            handle: "@zarz",
+            // time: currentTime,
+            profilePic: Zardoz,
+            content: ""});
+
+        console.log(tweet.content, tweets)
+        
     }
+
+    // const handleTime = () => {
+
+    //     let timePosted = 
+    // }
 
     return (
         <div className = "feed">
@@ -39,12 +55,16 @@ const Feed = () => {
                 <img src = "" alt = ""/>
                 <input 
                     type = "text"
+                    autoComplete = "off"
                     placeholder = "What's happening?"
                     onChange = {recordTweet}
+                    value = {tweet.content}
                 />
             </div>
+
             <div id = "tweetBar">
                 <button id = "tweet" onClick = {addTweet}>Tweet</button>
+                {/* buttons need to be added here  */}
             </div>
 
             <div id = "twitterFeed">
@@ -52,31 +72,14 @@ const Feed = () => {
                         <div key = {tweet.id} className = "tweet">
                             <h2 className = "user">{tweet.user}</h2>
                             <h3 className = "handle">{tweet.handle}</h3>
-                            <h4 className = "timePosted">Time</h4>
+                            {/* <h4 className = "timePosted">{tweet.time}</h4> */}
                             <h5 className = "headline">{tweet.content}</h5>
-                            <img src = {Zardoz}/>
+                            <img src = {tweet.profilePic}/>
                         </div>
                     ))}
-
-
-                    {/* buttons need to be added here  */}
-
-
-
             </div>
-
         </div>
     )
 }
-    // tweetButton = () => {
-    //     this.setState({
-    //         tweets: [...this.state.tweets, this.state.currentTweet],
-    //         currentTweet: "",
-    //     })
-    // }
-
-
-
-
 
 export default Feed;
