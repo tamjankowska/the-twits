@@ -19,11 +19,20 @@
     border-bottom: 0.1em solid #253341;
     position:fixed;
     top:0;
+    display: inline;
 } 
 
 .feed{
    width: 43vw;
    border:none;
+}
+
+
+#sparkle{
+    color: #36A1F2;
+    width: 4%;
+    height:4%;
+    float:right;
 }
 
 /*Below are for the functional tweet box */
@@ -47,10 +56,10 @@
 
 
 .inputAndButton{
-    padding-bottom: 7%;
+
     padding-right: 2%;
     padding-top: 10%;
-    padding-left: 3%;
+    padding-left: 1.5%;
     border-bottom:0.5em solid #253341;
 }
 
@@ -79,6 +88,24 @@ input, select, textarea{
     outline:none;
 }
 
+
+#feedIcons{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: #36A1F2;
+    width: 28%;
+    padding-left: 10%;
+}
+
+.tweetBar{
+    float:right;
+    padding-top:0;
+    padding-left: 40%;
+
+}
+
 #tweetBar{
     background-color: #36A1F2;
     color:white;
@@ -103,11 +130,6 @@ input, select, textarea{
     outline:none;
 }
 
-.tweetBar{
-    float: right;
-    padding-left:88%;
-  
-}
 
 /*BELOW WILL BE FORMATTING FOR THE INDIVIDUAL POSTS ONCE THEY'RE STACKED-So the render*/
 
