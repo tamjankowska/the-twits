@@ -39,8 +39,6 @@
     }
     .feed {
         border: none;
-        display: flex;
-        justify-content: center;
         margin-right: 20px;
 		margin-left: 20px;
     }
