@@ -20,8 +20,7 @@ const App = () => {
       <div className = "wrapper">
 
         <div className = "navbar">
-          <p>CONTENT HERE</p>
-          {/* <Navbar /> */}
+          <Navbar />
         </div>
 
         <div className = "feed">
