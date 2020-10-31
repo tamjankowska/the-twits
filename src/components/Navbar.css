@@ -1,0 +1,157 @@
+.navbar {
+        display: 100vh;
+    }
+       
+    .navtweetlogo {
+        display: flex;
+        font-size: 29px;
+        color: white;
+        height: 39px;
+        width: 39px;
+        align-content: center;
+        justify-content: center;
+        padding:6px;
+    }
+
+    .navlogout {
+        display: flex;
+        padding-top: 200px;
+        margin-bottom: 20px; 
+    }
+    
+    .navlogo {
+        color: white;
+        padding-right: 17px;
+     }
+       
+     .navlogaccount:hover {
+        background-color: #1DA1F21F;
+        transition: background-color .6s ease, font-size .3s linear;
+        border-radius: 50px;
+        opacity: 0.8;
+     }
+
+      .navicons2:hover, .navtext2:hover,.navtweetlogo:hover {
+            background-color: #1DA1F21F;
+            transition: color 0.4s ease-out;
+            color: #1DA1F2;
+            border-radius: 50px;
+            z-index: +2;
+            opacity: 0.85;
+            box-shadow: inset 0em 0em 0em 100em rgba(0, 0, 0, 0.3);
+            transition-property: background-color, box-shadow;
+            font-weight: 700;
+            filter: brightness(1.3);
+            box-shadow: 0 0 1px  black;
+            transition: all 0.5s ease;
+     }
+
+    .navbutton1 {
+        min-width: 78px;
+        min-height: 49px;
+        color: white;
+        font-size: 15px;
+        font-weight: 600;
+        cursor: pointer;
+        padding-left: 30px;
+        padding-right: 30px;
+        background-color: #1DA1F2;
+        margin-top: 50px;
+        border-radius: 35px;
+        width: 249px;
+        line-height: 1.3125;
+        border-color: black;
+        border-width: 0.1px;
+     } 
+
+     .navbutton1:hover {
+        filter: brightness(0.9);
+     }
+    
+
+    .navlogaccount {
+        display: flex;
+        display: inline-flexbox;
+        align-items: left;
+        justify-content: center;
+        z-index: 0;
+        position: fixed;
+        bottom: 45px;
+        padding: 10px;
+        width: 310px;
+        height: 39px;
+    }
+    
+    .navlogouta {
+        display:flex;
+        margin-left: 10px;
+        margin-right: 00px;
+        color: #38444D;
+        align-items: center;
+        justify-content: center;
+        font-size: 29px;
+        background-color: #8899A6;
+        width:39px;
+        height:39px;
+        border-radius: 50%;
+        position: fixed;
+        left: 242px;
+        bottom: 24px;
+    }
+    
+    .navlogoutb {
+        margin-left: 40px;
+        position: relative;
+        top: -15px;
+        right: -10px;
+        font-size: 15px;
+        color: white;
+    }
+    
+    .navlogoutc {
+        display: inline-table;
+        left: -43px;
+        color: lightslategray;
+        position: relative;
+        top: 5px;
+        font-size: 15px;
+    }
+    
+    .navlogoutd {
+        position: relative;
+        margin-left: auto;
+        font-size: 25px;
+        margin-right: auto;
+        margin-bottom: 30px;
+        left:70px;
+        top: -12px;
+        color: #8899A6;
+    }
+
+    .navicons2 {
+        color:white;
+        padding-right: 20px;
+        align-items: center;
+        cursor: pointer;
+        font-size: 27px;
+        padding-right: 21px;
+        padding-left: 0px;
+        font-weight: 600;
+        line-height: 28px;
+       
+    }
+
+    .navtext2 {
+        display:inline-flex;
+        position: relative;
+        color: white;
+        font-size: 19px;
+        padding-left: 5px;
+        padding-right: 10px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        font-weight: 700;
+        margin-right: 19px;
+       align-items: center;
+       font-weight: 700;
+    }
