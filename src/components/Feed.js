@@ -3,17 +3,16 @@ import './Feed.css';
 import Zardoz from './../images/feed-zardoz.jpg';
 
 const Feed = () => {
-    // let currentTime = Date.now(); still working on this 
+
     const [tweets, setTweets] = useState([]);
     const [tweet, setTweet] = useState({
         user: "Zardoz", 
         handle: "@zarz",
-        // time: currentTime,
+        createdAt: undefined,
         profilePic: Zardoz,
         content: "",
     })
-
-    
+   
     const recordTweet = (event) => {  
         setTweet({
             ...tweet,
@@ -21,28 +20,45 @@ const Feed = () => {
     }
 
     const addTweet = () => {
+
+        tweet.createdAt = new Date();
+
         setTweets([
-            ...tweets,
             {
                 ...tweet,
                 id: tweets.length
-            } 
+            },
+            ...tweets
         ])
+
         setTweet({
             user: "Zardoz", 
             handle: "@zarz",
-            // time: currentTime,
+            createdAt: undefined,
             profilePic: Zardoz,
             content: ""});
-
-        console.log(tweet.content, tweets)
         
     }
 
-    // const handleTime = () => {
+    const handleTime = (tweetCreatedAt) => {
+        let currentTime = new Date();
 
-    //     let timePosted = 
-    // }
+        let timeDiff = currentTime - tweetCreatedAt;
+        let timeDiffInSecs = timeDiff / 1000;
+        let timeDiffInMins = Math.floor(timeDiffInSecs / 60);
+        let timeDiffInHours = Math.floor(timeDiffInMins / 60);
+
+        if (timeDiffInMins < 1) {
+            return (
+                `Less than a minute ago`
+            );
+        } else if (timeDiffInMins < 60) {
+            return `${timeDiffInMins}m`;
+
+        } else {
+            return `${timeDiffInHours}h`
+        }
+    }
 
     return (
         <div className = "feed">
@@ -53,13 +69,17 @@ const Feed = () => {
 
             <div id = "post">
                 <img src = "" alt = ""/>
-                <input 
-                    type = "text"
-                    autoComplete = "off"
-                    placeholder = "What's happening?"
-                    onChange = {recordTweet}
-                    value = {tweet.content}
-                />
+                <form>
+                    <input 
+                        type = "text"
+                        // required
+                        // minlength = "1" (working on making the input field required)
+                        autoComplete = "off"
+                        placeholder = "What's happening?"
+                        onChange = {recordTweet}
+                        value = {tweet.content}
+                    />
+                </form>
             </div>
 
             <div id = "tweetBar">
@@ -72,7 +92,7 @@ const Feed = () => {
                         <div key = {tweet.id} className = "tweet">
                             <h2 className = "user">{tweet.user}</h2>
                             <h3 className = "handle">{tweet.handle}</h3>
-                            {/* <h4 className = "timePosted">{tweet.time}</h4> */}
+                            <h4 className = "createdAt">{handleTime(tweet.createdAt)}</h4>
                             <h5 className = "headline">{tweet.content}</h5>
                             <img src = {tweet.profilePic}/>
                         </div>
