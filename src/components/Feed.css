@@ -77,7 +77,12 @@
     border: none;
     font-size: 1.2em;
     font-weight: 490;
-    padding:0.4em;
+    padding:0.6em;
+    margin-right: 0.5em;
+}
+
+form {
+    width: 90%;
 }
 
 input, select, textarea{
@@ -106,8 +111,9 @@ input, select, textarea{
 
 .tweetBar{
     display:flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     width: 70%;
+    height: 100;
 }
 
 #tweetBar{
@@ -121,6 +127,10 @@ input, select, textarea{
     width: 5vw;
     height: 5%;
     cursor: pointer;
+    top: 10%;
+    margin-left: 50%;
+    padding-bottom: 2%;
+    height: 50%;
     border-radius: 1.5em;
     border:none;
 }

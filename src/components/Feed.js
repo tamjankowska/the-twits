@@ -90,7 +90,17 @@ const Feed = () => {
               disabled={tweet.content.length > 0 ? false : true}
             />   
           </form>
-            <div id="feedIconsBar">
+            {/* <div id="feedIconsBar">
+              <div id="feedIcons">
+                  <h2><BiImageAlt/></h2>
+                  <h2><MdGif/></h2>
+                  <h2><RiBarChartHorizontalFill/></h2>
+                  <h2><VscSmiley/></h2>
+                  <h2><AiOutlineCalendar/></h2>
+              </div>
+            </div> */}
+          </div>
+          <div id="feedIconsBar">
               <div id="feedIcons">
                   <h2><BiImageAlt/></h2>
                   <h2><MdGif/></h2>
@@ -99,7 +109,6 @@ const Feed = () => {
                   <h2><AiOutlineCalendar/></h2>
               </div>
             </div>
-          </div>
        </div>
     
      <div className="twitterFeed">
