@@ -24,7 +24,7 @@
         padding-right: 17px;
      }
        
-     .navlogaccount:hover {
+     .navlogaccount:hover, .navlogoutb, .navlogoutc, .navlogoutd {
         background-color: #1DA1F21F;
         transition: background-color .6s ease, font-size .3s linear;
         border-radius: 50px;
@@ -58,7 +58,7 @@
         background-color: #1DA1F2;
         margin-top: 50px;
         border-radius: 35px;
-        width: 249px;
+        width: 215px;
         line-height: 1.3125;
         border-color: black;
         border-width: 0.1px;
@@ -94,9 +94,9 @@
         width:39px;
         height:39px;
         border-radius: 50%;
-        position: fixed;
-        left: 242px;
-        bottom: 24px;
+        position: relative;
+        left: 30px;
+        bottom: 1px;
     }
     
     .navlogoutb {
@@ -123,8 +123,8 @@
         font-size: 25px;
         margin-right: auto;
         margin-bottom: 30px;
-        left:70px;
-        top: -12px;
+        left:-30px;
+        top: -7px;
         color: #8899A6;
     }
 
@@ -154,4 +154,32 @@
         margin-right: 19px;
        align-items: center;
        font-weight: 700;
+    }
+
+    .navtext2a {
+        display:inline-flex;
+        position: relative;
+        color: #1DA1F2;
+        font-size: 19px;
+        padding-left: 5px;
+        padding-right: 10px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        font-weight: 700;
+        margin-right: 19px;
+       align-items: center;
+       font-weight: 700;
+    }
+
+    .navicons2a {
+        color:#1DA1F2;
+        padding-right: 20px;
+        align-items: center;
+        cursor: pointer;
+        font-size: 27px;
+        padding-right: 21px;
+        padding-left: 0px;
+        font-weight: 600;
+        line-height: 28px;
+       
     }
