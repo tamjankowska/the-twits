@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import './Feed.css';
 import Zardoz from './../images/feed-zardoz.jpg';
+import Posts from './Posts';
 
 const Feed = () => {
     // let currentTime = Date.now(); still working on this 
@@ -77,6 +78,8 @@ const Feed = () => {
                             <img src = {tweet.profilePic}/>
                         </div>
                     ))}
+
+                    <Posts/>
             </div>
         </div>
     )
