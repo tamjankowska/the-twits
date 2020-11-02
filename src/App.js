@@ -7,7 +7,7 @@ import Trends from './components/Trends';
 
 const App = () => {
 
-  const [name] = useState("Twitter");
+  const [name] = useState("Home / Twitter");
 
   useEffect(()=> {
     document.title = name;
