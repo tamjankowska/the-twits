@@ -12,10 +12,10 @@
     font-size: 0.6em;
     background: #15202B;
     color: white;
-    width: 41.5%;
+    width: 41.4%;
     border-top:none;
     border-left: none;
-    border-right:none;
+    border-right: 0.1em solid #253341;
     border-bottom: 0.1em solid #253341;
     position:fixed;
     top:0;
