@@ -1,3 +1,7 @@
+*{
+    background-color: #15202B;
+}
+
 .app {
     background-color: #15202B;
     /*May need this for rescaling*/
