@@ -173,7 +173,7 @@ input, select, textarea{
     padding-left: 0.6em;
 }
 
-.handle, .timePosted{
+.handle, .createdAt{
     font-size: 1em;
     font-weight: normal;
     color: #84898F;
