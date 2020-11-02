@@ -15,8 +15,10 @@
 }
 
 .navbar, .feed, .trends {
-    border: 0.1em solid #253341;
+    border-right: 0.1em solid #253341;
+    border-left: 0.1em solid #253341;
 }
+
 .navbar {
     width: 25%;
     padding-left: 13%;
