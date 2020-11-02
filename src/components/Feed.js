@@ -16,7 +16,7 @@ const Feed = () => {
     const [tweet, setTweet] = useState({
         user: "Zardoz", 
         handle: "@zarz", 
-        profilePic: Test, 
+        profilePic: Zardoz, 
         content: ""
         
     })
@@ -27,16 +27,16 @@ const Feed = () => {
             content: event.target.value})
     }
 
-    const addTweet = () => {
-        setTweets([
-            ...tweets,
-            {
-                ...tweet,
-                id: tweets.length
-            } 
-        ])
-        console.log(tweets, tweet)
-    }
+    // const addTweet = () => {
+    //     setTweets([
+    //         ...tweets,
+    //         {
+    //             ...tweet,
+    //             id: tweets.length
+    //         } 
+    //     ])
+    //     console.log(tweets, tweet)
+    // }
 
 
     const addTweet = () => {
@@ -113,6 +113,7 @@ const Feed = () => {
                     ))}
 
                     <Posts/>
+                </div>
             </div>
         </div>
     )
