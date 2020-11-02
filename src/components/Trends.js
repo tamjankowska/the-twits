@@ -12,7 +12,7 @@ const Trends = () => {
     <div className="trends-panel">
         
             <i className={BiSearch}>
-            <input className="trends-searchBar" type="text"  placeholder="Search Twitter" ></input>
+            <input className="trends-searchBar" type="text"  placeholder="Search Twitter"></input>
             </i>
             <aside className="trends-aside">
                 <h2>What's happening</h2>

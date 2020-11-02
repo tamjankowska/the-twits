@@ -1,7 +1,13 @@
-import React, { useState } from "react";
-
-import "./Feed.css";
-import Zardoz from "./../images/feed-zardoz.jpg";
+import React, {useState} from 'react';
+import './Feed.css';
+import {HiOutlineSparkles} from 'react-icons/hi';
+import {BiImageAlt} from 'react-icons/bi';
+import {MdGif} from 'react-icons/md';
+import {RiBarChartHorizontalFill} from 'react-icons/ri';
+import {VscSmiley} from 'react-icons/vsc';
+import {AiOutlineCalendar} from 'react-icons/ai';
+import Zardoz from './../images/feed-zardoz.jpg';
+import Posts from './Posts';
 
 const Feed = () => {
   const [tweets, setTweets] = useState([]);
@@ -24,7 +30,7 @@ const Feed = () => {
     event.preventDefault();
     tweet.createdAt = new Date();
 
-    setTweets([
+     setTweets([
       {
         ...tweet,
         id: tweets.length,
@@ -41,6 +47,7 @@ const Feed = () => {
     });
   };
 
+   
   const handleTime = (tweetCreatedAt) => {
     let currentTime = new Date();
 
@@ -59,41 +66,58 @@ const Feed = () => {
   };
 
   return (
-    <div className="feed">
-      <div id="home">
-        <h1 id="homeLink">Home</h1>
+    <div className = "feed">
+      <div className="header" id = "Header">
+          <h1 id = "homeLink">Home <HiOutlineSparkles id="sparkle"/></h1>
       </div>
-
-      <div id="post">
-        <img src="" alt="" />
-        <form onSubmit = {addTweet}>
-          <input
-            type="text"
-            autoComplete="off"
-            placeholder="What's happening?"
-            onChange={recordTweet}
-            value={tweet.content}
-          />
-          <input
-            type="submit"
-            value="Tweet"
-            id="tweetBar"
-            disabled={tweet.content.length > 0 ? false : true}
-          />
-        
-        </form>
-      </div>
-
-      <div id="twitterFeed">
-        {tweets.map((tweet) => (
-          <div key={tweet.id} className="tweet">
-            <h2 className="user">{tweet.user}</h2>
-            <h3 className="handle">{tweet.handle}</h3>
-            <h4 className="createdAt">{handleTime(tweet.createdAt)}</h4>
-            <h5 className="headline">{tweet.content}</h5>
-            <img src={tweet.profilePic} />
+    
+      <div className="inputAndButton">
+        <div id="picAndInput">
+          <img className="profPic" src = {tweet.profilePic} alt = "Profile"/>
+          <form onSubmit = {addTweet}>
+            <input
+              id = "inputBar"
+              type="text"
+              autoComplete="off"
+              placeholder="What's happening?"
+              onChange={recordTweet}
+              value={tweet.content}
+            />
+            <input
+              type="submit"
+              value="Tweet"
+              id="tweetBar"
+              disabled={tweet.content.length > 0 ? false : true}
+            />   
+          </form>
+            <div id="feedIconsBar">
+              <div id="feedIcons">
+                  <h2><BiImageAlt/></h2>
+                  <h2><MdGif/></h2>
+                  <h2><RiBarChartHorizontalFill/></h2>
+                  <h2><VscSmiley/></h2>
+                  <h2><AiOutlineCalendar/></h2>
+              </div>
+            </div>
           </div>
-        ))}
+       </div>
+    
+     <div className="twitterFeed">
+      <div className="tweet">
+          {tweets.map(tweet => (
+              <div key = {tweet.id} >
+                  <div className="top-row-flex">
+                    <img className="profPic" src = {tweet.profilePic} alt="Profile"/>
+                    <h2 className = "user">{tweet.user}</h2>
+                    <h2 className = "handle">{tweet.handle}</h2>
+                    <h2 className="timedot">·</h2>
+                    <h2 className = "createdAt">{handleTime(tweet.createdAt)}</h2>
+                    <h5 className = "headline">{tweet.content}</h5>
+                  </div>
+              </div>
+          ))}
+          <Posts/>
+        </div>
       </div>
     </div>
   );

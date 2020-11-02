@@ -1,3 +1,7 @@
+*{
+    background-color: #15202B;
+}
+
 .app {
     background-color: #15202B;
     /*May need this for rescaling*/
@@ -36,10 +40,14 @@
 @media screen and (max-width: 375px) {
     .trends, .navbar {
       display: none;
+    } * {
+        width:fit-content;
     }
     .feed {
         border: none;
         margin-right: 20px;
-		margin-left: 20px;
+        margin-left: 20px;
+        height: 100%;
+        
     }
 }

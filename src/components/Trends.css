@@ -4,11 +4,14 @@
   width: 75%;
   top: 2%;
   line-height: 90%;
+  max-height: 50%;
+  max-width: fit-content;
 }
 
 .trends-panel a {
   color: #36a1f2;
   text-decoration: none;
+  background-color: #253341;
 }
 
 .trends-panel a:hover {
@@ -47,10 +50,12 @@
   padding-bottom: 5%;
   padding-top: 0;
   padding-left: 2%;
+  background-color: #253341;
 }
 .trend-article {
   border-bottom: 0.05em solid #666769c4;
   padding: 8px 12px;
+  background-color: #253341;
 }
 .trend-article h3 {
   color: white;
@@ -59,6 +64,7 @@
   width: 60%;
   line-height: normal;
   overflow: hidden;
+  background-color: #253341;
 }
 
 .trend-article p {
@@ -68,6 +74,7 @@
   margin-block-end: 0;
   margin-inline-start: 0;
   margin-inline-end: 1%;
+  background-color: #253341;
 }
 
 .trends-image {
@@ -81,6 +88,7 @@
 .show-more {
   padding: 4%;
   font-size: large;
+  background-color: #253341;
 }
 .trends-footer {
   padding-top: 2%;
@@ -90,4 +98,5 @@
   padding: 2%;
   display: inline-block;
   color: grey;
+  background-color: #15202B;
 }
