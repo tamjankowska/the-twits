@@ -163,6 +163,7 @@ input, select, textarea{
     border-radius: 50%;
     width: 3.7em;
     height: 3.7em;
+    padding-left: 1%;
 }
 
 .user{
@@ -173,7 +174,7 @@ input, select, textarea{
     padding-left: 0.6em;
 }
 
-.handle, .createdAt{
+.handle, .createdAt, .timePosted{
     font-size: 1em;
     font-weight: normal;
     color: #84898F;
